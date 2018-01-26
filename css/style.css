@@ -1,7 +1,7 @@
 body{
   font-size: 16px;
   font-family: 'aldo', sans-serif;
-
+background: #233D58;
   position: relative;
   margin: 0px;
 }
@@ -110,7 +110,7 @@ header #next_section img {
   width: 100%;
   position: relative;
   height: 600px;
-  background: black;
+
 }
 #slider section.slide{
   position: absolute;
@@ -419,6 +419,9 @@ footer p{
 
 
 @media screen and (min-width: 480px) {
+  body{
+    background: #233D58;
+  }
 
   #slider #home .mainlogo{
   width: 270px;
@@ -445,7 +448,7 @@ font-size: 1.4em;
 
 @media screen and (min-width: 600px) {
   body{
-    background: orange;
+
   }
 
 }
@@ -453,7 +456,7 @@ font-size: 1.4em;
 
 @media screen and (min-width: 767px) {
   body{
-    background: #233d58;
+
   }
   header{
     height: 50px;
@@ -576,7 +579,7 @@ font-size: 1.4em;
 
 @media screen and (min-width: 950px) {
   body{
-    background: black;
+background: #233D58;
   }
 
 }
