@@ -161,3 +161,246 @@ main .contenido-principal .publicar form button{
 main .contenido-principal .publicar form button:hover{
 		background: linear-gradient(to bottom, #1176b6 0%, #1a87cd 100%);
 }
+
+
+/* publicaciones */
+main .publicacion{
+	margin-bottom: 20px;
+}
+main .publicacion .foto{
+	margin-right: 15px;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	border-radius: 100px;
+
+}
+main .publicacion .foto img {
+	width: 100%;
+}
+main .publicacion .nombre{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+main .publicacion .texto {
+	background: #fff;
+	color: #3d3c3c;
+	font-size: 14px;
+	padding: 15px;
+	margin-bottom: 15px;
+
+}
+main .publicacion .imagen {
+	padding: 15px;
+	background: white;
+	margin-bottom: 15px;
+
+}
+
+main .publicacion .imagen img {
+	width: 100%;
+}
+
+main .publicacion .caja-botones {
+	margin-bottom: 20px;
+}
+main .publicacion .caja-botones button {
+background: #1176b6;
+color: #fff;
+cursor: pointer;
+padding: 10px 20px;
+display: inline-block;
+font-size: 18px;
+line-height: 18px;
+border-radius: 4px;
+border: none;
+
+}
+main .publicacion .caja-botones button:hover {
+background: #0d659d;
+
+}
+main .publicacion .caja-botones p{
+	margin-bottom: 0;
+	color: #1782c6;
+}
+
+
+/* comentarios */
+main .publicacion .comentarios .comentario{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cbcbcb;
+
+}
+main .publicacion .comentario .foto_comentario{
+	margin-right: 15px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	overflow: hidden;
+
+}
+
+main .publicacion .comentario .foto_comentario img{
+	width: 100%;
+}
+main .publicacion .comentario  form textarea{
+	width: 100%;
+	background: #fff;
+	border: 1px solid #cbcbcb;
+	color: #565656;
+	padding: 8px;
+	min-width: 40px;
+	max-width: 100%;
+	font-size: 14px;
+
+}
+
+main .publicacion .comentario .respuesta{
+	font-size: 14px;
+	margin-bottom: 10px;
+
+}
+main .publicacion .comentario .me-gusta{
+font-size: 14px;
+}
+
+/*---barra derecha ---*/
+main .barra-lateral-derecha h3{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+
+}
+
+main .barra-lateral-derecha .ads a{
+	margin-bottom: 15px;
+	display: inline-block;
+
+}
+main .barra-lateral-derecha .ads a img{
+	width: 100%;
+}
+
+
+/*---footer--*/
+main footer{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+
+}
+main footer a{
+	color: #1176b6;
+	line-height: 14px;
+	margin-right: 10px;
+
+}
+
+main footer .copyright{
+	color: #919191;
+	margin-top: 10px;
+}
+
+
+/*-----media querys ---*/
+
+@media screen and (max-width: 767px) {
+	main .btn-menu{
+		display: block;
+		border:1px solid #00609c;
+		padding:5px 10px;
+		font-size: 14px;
+		background: linear-gradient(to bottom, #1a87cd 0%, #1176b6 100%);
+		color: #fff;
+		border-radius: 3px;
+		cursor: pointer;
+		margin-bottom: 20px;
+		text-align: center;
+
+	}
+	main .btn-menu:hover{
+		background: #0d659d;
+		text-decoration: none;
+
+	}
+	main .fondo-enlace{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left:0;
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 99;
+		display: none;
+
+	}
+
+main .fondo-enlace.active{
+display: block;
+
+}
+main .barra-lateral-izquierda{
+	width: 85%;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.85);
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: all .3s ease;
+	overflow: scroll;
+
+
+}
+main .barra-lateral-izquierda.active{
+	transform: translateX(0%);
+}
+main .barra-lateral-izquierda nav{
+	border-bottom: none;
+
+}
+main .barra-lateral-izquierda nav a{
+padding: 20px;
+color: #fff;
+
+}
+main .barra-lateral-izquierda nav a:hover{
+color: #3d3c3c;
+background: #fff;
+
+	}
+}
+
+@media screen and (max-width: 575px){
+	header .menu{
+		padding: 0 15px 15px 15px;
+	}
+	main .contenido-principal .publicar .foto_perfil{
+		width: 40px;
+		height: 40px;
+
+	}
+main .contenido-principal .publicacion .foto{
+	width: 40px;
+	height: 40px;
+}
+
+
+}
+
+@media screen and (max-width: 400px){
+	main .contenido-principal .publicar .foto_perfil{
+		display: none;
+	}
+
+}
